@@ -1,6 +1,6 @@
 # Hackintosh configuration for Lenovo ThinkPad E580
 
-Tested with 20KS003AXS configuration on macOS Mojave (10.14)
+Tested on 20KS003AXS model with macOS Mojave (10.14)
 
 Everything seems to be working except:
 * Native Wi-Fi (Intel AC 3165)
