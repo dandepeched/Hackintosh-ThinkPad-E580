@@ -1,0 +1,109 @@
+24:980  16:151  Found UEFI Acpi 2.0 RSDP at 9FFFD014
+24:980  0:000  Saving ACPI tables from RSDP 9FFFD014 to EFI\CLOVER\ACPI\origin ...
+24:980  0:000   9FFFD014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+24:980  0:000    (Xsdt: 9FFC0188, Rsdt: 9FFC00C4)
+24:980  0:000    9FFC0188: 'XSDT', 'TP-R0P', Rev: 1, Len: 268
+24:980  0:000    9FFC00C4: 'RSDT', 'TP-R0P', Rev: 1, Len: 152
+24:980  0:000    Tables in Xsdt: 29
+24:980  0:000    0. 9FFF3000: 'FACP', 'TP-R0P', Rev: 5, Len: 244
+24:980  0:000        (Dsdt: 9FFCD000, Facs: 9FF3C000, XDsdt: 9FFCD000, XFacs: 0)
+24:980  0:000        9FFCD000: 'DSDT', 'SKL', Rev: 2, Len: 137613
+24:984  0:003        9FF3C000: 'FACS', Ver: 2, Len: 64
+24:984  0:000    1. 9FFFB000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+24:984  0:000    2. 9FFFA000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+24:984  0:000    3. 9FFF9000: 'TPM2', 'TP-R0P', Rev: 4, Len: 52
+24:984  0:000    4. 9FF52000: 'UEFI', 'TP-R0P', Rev: 1, Len: 66
+24:984  0:000    5. 9FFF5000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12868
+24:984  0:000    6. 9FFF4000: 'SSDT', 'PerfTune', Rev: 2, Len: 1478
+24:984  0:000    7. 9FFF2000: 'HPET', 'TP-R0P', Rev: 1, Len: 56
+24:984  0:000    8. 9FFF1000: 'APIC', 'TP-R0P', Rev: 3, Len: 300
+24:984  0:000    9. 9FFF0000: 'MCFG', 'TP-R0P', Rev: 1, Len: 60
+24:984  0:000    10. 9FFEF000: 'ECDT', 'TP-R0P', Rev: 1, Len: 83
+24:984  0:000    11. 9FFCB000: 'SSDT', 'ProjSsdt', Rev: 2, Len: 5804
+24:984  0:000    12. 9FFCA000: 'BOOT', 'TP-R0P', Rev: 1, Len: 40
+24:984  0:000    13. 9FFC9000: 'BATB', 'TP-R0P', Rev: 2, Len: 74
+24:984  0:000    14. 9FFC8000: 'SLIC', 'TP-R0P', Rev: 1, Len: 374
+24:984  0:000    15. 9FFC6000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+24:984  0:000    16. 9FFC5000: 'SSDT', 'CtdpB', Rev: 2, Len: 1389
+24:984  0:000    17. 9FFC4000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 1608
+24:984  0:000    18. 9FFC3000: 'DBGP', 'TP-R0P', Rev: 1, Len: 52
+24:984  0:000    19. 9FFC2000: 'DBG2', 'TP-R0P', Rev: 0, Len: 84
+24:984  0:000    20. 9FFC1000: 'MSDM', 'TP-R0P', Rev: 3, Len: 85
+24:984  0:000    21. 9FFFC000: 'SSDT', 'AmdTabl', Rev: 1, Len: 1476
+24:984  0:000    22. 9FFBF000: 'SSDT', 'SgPch', Rev: 2, Len: 1453
+24:984  0:000    23. 9FFBE000: 'SSDT', 'SgUlx', Rev: 2, Len: 849
+24:984  0:000    24. 9FFBD000: 'DMAR', 'TP-R0P', Rev: 1, Len: 168
+24:984  0:000    25. 9FFBC000: 'ASF!', 'TP-R0P', Rev: 32, Len: 160
+24:984  0:000    26. 9FFBB000: 'FPDT', 'TP-R0P', Rev: 1, Len: 68
+24:984  0:000    27. 9FFBA000: 'BGRT', 'TP-R0P', Rev: 1, Len: 56
+24:984  0:000    28. 9FF28000: 'UEFI', 'TP-R0P', Rev: 1, Len: 318
+24:984  0:000    Tables in Rsdt: 29
+24:984  0:000    0. 9FFF3000: 'FACP', 'TP-R0P', Rev: 5, Len: 244
+24:984  0:000        (Dsdt: 9FFCD000, Facs: 9FF3C000, XDsdt: 9FFCD000, XFacs: 0)
+24:984  0:000        9FFCD000: 'DSDT', 'SKL', Rev: 2, Len: 137613
+24:988  0:004        9FF3C000: 'FACS', Ver: 2, Len: 64
+24:988  0:000    1. 9FFFB000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+24:988  0:000    2. 9FFFA000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+24:988  0:000    3. 9FFF9000: 'TPM2', 'TP-R0P', Rev: 4, Len: 52
+24:988  0:000    4. 9FF52000: 'UEFI', 'TP-R0P', Rev: 1, Len: 66
+24:988  0:000    5. 9FFF5000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12868
+24:988  0:000    6. 9FFF4000: 'SSDT', 'PerfTune', Rev: 2, Len: 1478
+24:988  0:000    7. 9FFF2000: 'HPET', 'TP-R0P', Rev: 1, Len: 56
+24:988  0:000    8. 9FFF1000: 'APIC', 'TP-R0P', Rev: 3, Len: 300
+24:988  0:000    9. 9FFF0000: 'MCFG', 'TP-R0P', Rev: 1, Len: 60
+24:988  0:000    10. 9FFEF000: 'ECDT', 'TP-R0P', Rev: 1, Len: 83
+24:988  0:000    11. 9FFCB000: 'SSDT', 'ProjSsdt', Rev: 2, Len: 5804
+24:988  0:000    12. 9FFCA000: 'BOOT', 'TP-R0P', Rev: 1, Len: 40
+24:988  0:000    13. 9FFC9000: 'BATB', 'TP-R0P', Rev: 2, Len: 74
+24:988  0:000    14. 9FFC8000: 'SLIC', 'TP-R0P', Rev: 1, Len: 374
+24:988  0:000    15. 9FFC6000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+24:988  0:000    16. 9FFC5000: 'SSDT', 'CtdpB', Rev: 2, Len: 1389
+24:988  0:000    17. 9FFC4000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 1608
+24:988  0:000    18. 9FFC3000: 'DBGP', 'TP-R0P', Rev: 1, Len: 52
+24:988  0:000    19. 9FFC2000: 'DBG2', 'TP-R0P', Rev: 0, Len: 84
+24:988  0:000    20. 9FFC1000: 'MSDM', 'TP-R0P', Rev: 3, Len: 85
+24:988  0:000    21. 9FFFC000: 'SSDT', 'AmdTabl', Rev: 1, Len: 1476
+24:988  0:000    22. 9FFBF000: 'SSDT', 'SgPch', Rev: 2, Len: 1453
+24:988  0:000    23. 9FFBE000: 'SSDT', 'SgUlx', Rev: 2, Len: 849
+24:988  0:000    24. 9FFBD000: 'DMAR', 'TP-R0P', Rev: 1, Len: 168
+24:988  0:000    25. 9FFBC000: 'ASF!', 'TP-R0P', Rev: 32, Len: 160
+24:988  0:000    26. 9FFBB000: 'FPDT', 'TP-R0P', Rev: 1, Len: 68
+24:988  0:000    27. 9FFBA000: 'BGRT', 'TP-R0P', Rev: 1, Len: 56
+24:988  0:000    28. 9FF28000: 'UEFI', 'TP-R0P', Rev: 1, Len: 318
+24:988  0:000  Found UEFI Acpi 1.0 RSDP at 9FFFD000
+24:988  0:000  Printing ACPI tables from RSDP 9FFFD000 ...
+24:988  0:000   9FFFD000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+24:988  0:000    (Rsdt: 9FFC0000)
+24:988  0:000    9FFC0000: 'RSDT', 'TP-R0P', Rev: 1, Len: 148
+24:988  0:000    Tables in Rsdt: 28
+24:988  0:000    0. 9FFF3000: 'FACP', 'TP-R0P', Rev: 5, Len: 244
+24:988  0:000        (Dsdt: 9FFCD000, Facs: 9FF3C000, XDsdt: 9FFCD000, XFacs: 0)
+24:988  0:000        9FFCD000: 'DSDT', 'SKL', Rev: 2, Len: 137613
+24:992  0:004        9FF3C000: 'FACS', Ver: 2, Len: 64
+24:992  0:000    1. 9FFFB000: 'SSDT', 'Tpm2Tabl', Rev: 2, Len: 1219
+24:992  0:000    2. 9FFFA000: 'SSDT', 'MeSsdt', Rev: 2, Len: 70
+24:992  0:000    3. 9FFF9000: 'TPM2', 'TP-R0P', Rev: 4, Len: 52
+24:992  0:000    4. 9FF52000: 'UEFI', 'TP-R0P', Rev: 1, Len: 66
+24:992  0:000    5. 9FFF5000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12868
+24:992  0:000    6. 9FFF4000: 'SSDT', 'PerfTune', Rev: 2, Len: 1478
+24:992  0:000    7. 9FFF2000: 'HPET', 'TP-R0P', Rev: 1, Len: 56
+24:992  0:000    8. 9FFF1000: 'APIC', 'TP-R0P', Rev: 3, Len: 300
+24:992  0:000    9. 9FFF0000: 'MCFG', 'TP-R0P', Rev: 1, Len: 60
+24:992  0:000    10. 9FFEF000: 'ECDT', 'TP-R0P', Rev: 1, Len: 83
+24:992  0:000    11. 9FFCB000: 'SSDT', 'ProjSsdt', Rev: 2, Len: 5804
+24:992  0:000    12. 9FFCA000: 'BOOT', 'TP-R0P', Rev: 1, Len: 40
+24:992  0:000    13. 9FFC9000: 'BATB', 'TP-R0P', Rev: 2, Len: 74
+24:992  0:000    14. 9FFC6000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+24:992  0:000    15. 9FFC5000: 'SSDT', 'CtdpB', Rev: 2, Len: 1389
+24:992  0:000    16. 9FFC4000: 'SSDT', 'UsbCTabl', Rev: 2, Len: 1608
+24:992  0:000    17. 9FFC3000: 'DBGP', 'TP-R0P', Rev: 1, Len: 52
+24:992  0:000    18. 9FFC2000: 'DBG2', 'TP-R0P', Rev: 0, Len: 84
+24:992  0:000    19. 9FFC1000: 'MSDM', 'TP-R0P', Rev: 3, Len: 85
+24:992  0:000    20. 9FFFC000: 'SSDT', 'AmdTabl', Rev: 1, Len: 1476
+24:992  0:000    21. 9FFBF000: 'SSDT', 'SgPch', Rev: 2, Len: 1453
+24:992  0:000    22. 9FFBE000: 'SSDT', 'SgUlx', Rev: 2, Len: 849
+24:992  0:000    23. 9FFBD000: 'DMAR', 'TP-R0P', Rev: 1, Len: 168
+24:992  0:000    24. 9FFBC000: 'ASF!', 'TP-R0P', Rev: 32, Len: 160
+24:992  0:000    25. 9FFBB000: 'FPDT', 'TP-R0P', Rev: 1, Len: 68
+24:992  0:000    26. 9FFBA000: 'BGRT', 'TP-R0P', Rev: 1, Len: 56
+24:992  0:000    27. 9FF28000: 'UEFI', 'TP-R0P', Rev: 1, Len: 318
