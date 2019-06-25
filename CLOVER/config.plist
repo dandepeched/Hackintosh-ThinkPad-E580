@@ -45,7 +45,7 @@
 					<key>Comment</key>
 					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					T1NJRA==
@@ -307,6 +307,160 @@
 					WFBSVwI=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q43 to XQ43)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E0Mw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE0Mw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q14 to XQ14)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExNA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExNA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q15 to XQ15)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExNQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExNQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q6A to XQ6A)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2QQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2QQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q16 to XQ16)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExNg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExNg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q64 to XQ64)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2NA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2NA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q66 to XQ66)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2Ng==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2Ng==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q60 to XQ60)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2MA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2MA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q61 to XQ61)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2MQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2MQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q62 to XQ62)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2Mg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2Mg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method (_Q94 to XQ94)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E5NA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE5NA==
+					</data>
+				</dict>
 			</array>
 			<key>SlpSmiAtWake</key>
 			<false/>
@@ -315,9 +469,7 @@
 		</dict>
 		<key>DisabledAML</key>
 		<array>
-			<string>SSDT-DDA.aml</string>
 			<string>SSDT.aml</string>
-			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
 		</array>
 		<key>DropTables</key>
@@ -356,6 +508,9 @@
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-GPRW.aml</string>
 			<string>SSDT-PNLF.aml</string>
+			<string>SSDT-UIAC.aml</string>
+			<string>SSDT-KBD.aml</string>
+			<string>SSDT-Thinkpad_Clickpad.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -367,9 +522,11 @@
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
-		<false/>
+		<true/>
 		<key>Secure</key>
 		<false/>
+		<key>SkipHibernateTimeout</key>
+		<true/>
 		<key>Timeout</key>
 		<integer>2</integer>
 		<key>XMPDetection</key>
@@ -669,7 +826,7 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<true/>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
