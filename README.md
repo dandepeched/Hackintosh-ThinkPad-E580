@@ -9,9 +9,11 @@ Tested on 20KS003AXS model with macOS Mojave (10.14)
 * Fingerprint sensor
 
 **Wi-Fi Fix**
+
 Native Wi-Fi adapter (Intel AC 3165) was replaced with Broadcom BCM94352Z
 
 **Disable Hibernation**
+
 Run following commands:
 ```
 sudo pmset -a hibernatemode 0
@@ -22,6 +24,7 @@ sudo pmset -a autopoweroff 0
 ```
 
 **Power Management**
+
 Proper FrequencyVectors was added to IOPlatformPluginFamily.kext
 
 **Known Issues**
