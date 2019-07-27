@@ -512,21 +512,6 @@
 			<key>NoOemTableId</key>
 			<false/>
 		</dict>
-		<key>SortedOrder</key>
-		<array>
-			<string>SSDT-pr.aml</string>
-			<string>SSDT-RMCF.aml</string>
-			<string>SSDT-XOSI.aml</string>
-			<string>SSDT-IGPU.aml</string>
-			<string>SSDT-PNLF.aml</string>
-			<string>SSDT-SATA.aml</string>
-			<string>SSDT-DDGPU.aml</string>
-			<string>SSDT-GPRW.aml</string>
-			<string>SSDT-PTSWAK.aml</string>
-			<string>SSDT-UIAC.aml</string>
-			<string>SSDT-KBD.aml</string>
-			<string>SSDT-Thinkpad_Clickpad.aml</string>
-		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
@@ -875,10 +860,6 @@
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
-		<key>ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
@@ -897,22 +878,6 @@
 				<key>Replace</key>
 				<data>
 				ILniAAAAkJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				igKEwHRE
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Replace</key>
-				<data>
-				igKEwOtE
 				</data>
 			</dict>
 			<dict>
@@ -936,20 +901,20 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>0x591b0000, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
+				<string>10.11.dp1+ BT4LE-Handoff-Hotspot, credit RehabMan based on Dokterdok original</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				AABgAgAAUAE=
+				SIX/dEdIiwc=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
 				<data>
-				AAAwAQAAkAA=
+				Qb4PAAAA60Q=
 				</data>
 			</dict>
 			<dict>
@@ -970,62 +935,6 @@
 				<data>
 				AQUKAAAIAACHAQAAAgQSAAAIAACHAQAA/wAAAAEAAAAg
 				AAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				RiV1VCUwNHgA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				RiV1VHh4eHgA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100-series)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>#02 Enable TRIM for non-Apple SSDs, RehabMan</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
