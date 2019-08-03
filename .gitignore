@@ -1,6 +1,10 @@
 Clover_Install_Log.txt
+/APPLE
+/CLOVER/config_*.plist
+/CLOVER/ACPI/patched-off
 /CLOVER/doc
+/CLOVER/drivers/off
+/CLOVER/kexts-off
 /CLOVER/OEM
 **/._*.*
 **/._*
-/Non-EFI*Files/Library

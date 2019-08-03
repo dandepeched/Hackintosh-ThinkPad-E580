@@ -5,7 +5,7 @@
 	<key>BuildAliasOf</key>
 	<string>IOPlatformPluginFamily</string>
 	<key>BuildVersion</key>
-	<string>6</string>
+	<string>29</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
@@ -13,6 +13,6 @@
 	<key>ProjectName</key>
 	<string>IOPlatformPluginFamily</string>
 	<key>SourceVersion</key>
-	<string>707260020000000</string>
+	<string>707250035000000</string>
 </dict>
 </plist>

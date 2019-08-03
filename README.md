@@ -1,6 +1,6 @@
 # Hackintosh configuration for Lenovo ThinkPad E580
 
-Tested on 20KS003AXS model with macOS Mojave (10.14)
+Tested on 20KS003AXS model with macOS Mojave (10.14.6)
 
 **Not Supported Hardware**
 * Native Wi-Fi (Intel AC 3165)
@@ -10,7 +10,13 @@ Tested on 20KS003AXS model with macOS Mojave (10.14)
 
 **Wi-Fi Fix**
 
-Native Wi-Fi adapter (Intel AC 3165) was replaced with Broadcom BCM94352Z
+Native Wi-Fi adapter was replaced with Broadcom BCM94352Z
+
+**Known Issues**
+* Lid close and FN keys stop working after sleep (fixed after reboot)
+* Minor glitches for battery status is observed from time to time (empty or red battery icon while 100% charge)
+
+## Optional configuration
 
 **Disable Hibernation**
 
@@ -26,7 +32,8 @@ sudo pmset -a autopoweroff 0
 **Power Management**
 
 Proper FrequencyVectors was added to IOPlatformPluginFamily.kext
+[More details](https://github.com/Piker-Alpha/freqVectorsEdit.sh)
 
-**Known Issues**
-* Lid close and FN keys stop working after sleep (fixed after reboot)
-* Minor glitches for battery status is observed from time to time (empty or red battery icon while 100% charge)
+**Power Management**
+
+If you prefer to keep all kexts in */Library/Extensions* directory, you can use those from *Non-EFI Files* folder
