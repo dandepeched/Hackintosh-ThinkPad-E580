@@ -1,6 +1,7 @@
 Clover_Install_Log.txt
 /APPLE
 /CLOVER/config_*.plist
+/CLOVER/ACPI/origin/DumpLog.txt
 /CLOVER/ACPI/patched-off
 /CLOVER/doc
 /CLOVER/drivers/off

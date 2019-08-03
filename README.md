@@ -34,6 +34,6 @@ sudo pmset -a autopoweroff 0
 Proper FrequencyVectors was added to IOPlatformPluginFamily.kext
 [More details](https://github.com/Piker-Alpha/freqVectorsEdit.sh)
 
-**Power Management**
+**Kexts Location**
 
 If you prefer to keep all kexts in */Library/Extensions* directory, you can use those from *Non-EFI Files* folder
