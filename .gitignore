@@ -4,8 +4,10 @@ Clover_Install_Log.txt
 /CLOVER/ACPI/origin/DumpLog.txt
 /CLOVER/ACPI/patched-off
 /CLOVER/doc
+/CLOVER/drivers/BIOS
 /CLOVER/drivers/off
-/CLOVER/kexts-off
+/CLOVER/kexts/Off
 /CLOVER/OEM
 **/._*.*
 **/._*
+**/.empty

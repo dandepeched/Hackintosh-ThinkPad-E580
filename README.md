@@ -1,6 +1,9 @@
 # Hackintosh configuration for Lenovo ThinkPad E580
 
-Tested on 20KS003AXS model with macOS Mojave (10.14.6)
+Tested on 20KS003AXS model with macOS Catalina (10.15.3)
+
+**BIOS Settings**
+* Disable Secure Boot option
 
 **Not Supported Hardware**
 * Native Wi-Fi (Intel AC 3165)
@@ -28,11 +31,6 @@ sudo mkdir /var/vm/sleepimage
 sudo pmset -a standby 0
 sudo pmset -a autopoweroff 0
 ```
-
-**Power Management**
-
-Proper FrequencyVectors was added to IOPlatformPluginFamily.kext
-[More details](https://github.com/Piker-Alpha/freqVectorsEdit.sh)
 
 **Kexts Location**
 

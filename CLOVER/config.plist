@@ -232,11 +232,11 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					F0dCSVg=
+					R0JJWAM=
 					</data>
 					<key>Replace</key>
 					<data>
-					F1hCSVg=
+					WEJJWAM=
 					</data>
 				</dict>
 				<dict>
@@ -246,11 +246,11 @@
 					<false/>
 					<key>Find</key>
 					<data>
-					IEdCU1Q=
+					R0JTVAQ=
 					</data>
 					<key>Replace</key>
 					<data>
-					IFhCU1Q=
+					WEJTVAQ=
 					</data>
 				</dict>
 				<dict>
@@ -474,7 +474,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 alcid=15</string>
+		<string>dart=0 alcid=15 darkwake=0</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
