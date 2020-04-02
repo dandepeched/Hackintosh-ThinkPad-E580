@@ -1,13 +1,15 @@
 # Hackintosh configuration for Lenovo ThinkPad E580
 
-Tested on 20KS003AXS model with macOS Catalina (10.15.3)
+Tested on 20KS003AXS model with macOS Catalina (10.15.4)
 
 **BIOS Settings**
+* BIOS version 1.34
 * Disable Secure Boot option
 
 **Not Supported Hardware**
 * Native Wi-Fi (Intel AC 3165)
 * Discrete graphics card (ATI Radeon RX 550)
+* Line/Mic Input (3,5")
 * Card reader
 * Fingerprint sensor
 
@@ -17,7 +19,8 @@ Native Wi-Fi adapter was replaced with Broadcom BCM94352Z
 
 **Known Issues**
 * Lid close and FN keys stop working after sleep (fixed after reboot)
-* Minor glitches for battery status is observed from time to time (empty or red battery icon while 100% charge)
+* External monitor need to be re-plugged after sleep
+* Minor glitches for battery status is observed from time to time (empty or red battery icon, etc)
 
 ## Optional configuration
 
