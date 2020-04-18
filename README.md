@@ -12,6 +12,7 @@ Tested on 20KS003AXS model with macOS Catalina (10.15.4)
 * Line/Mic Input (3,5")
 * Card reader
 * Fingerprint sensor
+* Trackpad supports up to 3-finger gestures. Cannot rotate, pinch, etc
 
 **Wi-Fi Fix**
 
