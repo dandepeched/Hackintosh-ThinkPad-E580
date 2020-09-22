@@ -7,7 +7,7 @@ Tested on 20KS003AXS model with macOS Catalina (10.15.6)
 * Disable Secure Boot option
 
 **Not Supported Hardware**
-* Native Wi-Fi (Intel AC 3165)
+* Stock NVMe SSD (Samsung PM981)
 * Discrete graphics card (ATI Radeon RX 550)
 * Line/Mic Input (3,5")
 * Card reader
@@ -17,6 +17,8 @@ Tested on 20KS003AXS model with macOS Catalina (10.15.6)
 **Wi-Fi Fix**
 
 Native Wi-Fi adapter was replaced with Broadcom BCM94352Z
+
+While it is possible to make the AC3165 card work now, it is adviced to replace it with a better card that is supported.
 
 **Known Issues**
 * Lid close and FN keys stop working after sleep (fixed after reboot)
