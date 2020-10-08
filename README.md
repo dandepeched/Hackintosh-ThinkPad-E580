@@ -1,6 +1,6 @@
 # Hackintosh configuration for Lenovo ThinkPad E580
 
-Tested on 20KS003AXS model with macOS Catalina (10.15.6)
+Tested on 20KS003AXS model with macOS Catalina (10.15.7)
 
 **BIOS Settings**
 * BIOS version 1.34
