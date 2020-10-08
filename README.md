@@ -27,6 +27,8 @@ I've replaced mine with Broadcom BCM94352Z.
 ## Optional configuration
 **Possible fixes**
 * Some users reported that they failed to boot. That was fixed by adding **npci=0x3000** to bootflags.
+* If you want to try make Intel AC3165 WiFi work, check following repos: https://github.com/OpenIntelWireless/itlwm, https://github.com/AppleIntelWifi/adapter
+* Tested SSDs: Toshiba XG5 (stock), ADATA SX8200
 
 **Disable Hibernation**
 
