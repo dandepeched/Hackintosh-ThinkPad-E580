@@ -7,18 +7,17 @@ Tested on 20KS003AXS model with macOS Catalina (10.15.7)
 * Disable Secure Boot option
 
 **Not Supported Hardware**
-* Stock NVMe SSD (Samsung PM981)
+* Following stock NVMe SSDs reported as not supported: Samsung PM981
 * Discrete graphics card (ATI Radeon RX 550)
 * Line/Mic Input (3,5")
 * Card reader
 * Fingerprint sensor
 * Trackpad supports up to 3-finger gestures. Cannot rotate, pinch, etc
 
-**Wi-Fi Fix**
+**Wi-Fi Adapter**
 
-Native Wi-Fi adapter was replaced with Broadcom BCM94352Z
-
-While it is possible to make the AC3165 card work now, it is adviced to replace it with a better card that is supported.
+While it is possible to make the stock Wi-Fi card (Intel AC3165) work now, it is still adviced to replace it with a better card that is supported.
+I've replaced mine with Broadcom BCM94352Z.
 
 **Known Issues**
 * Lid close and FN keys stop working after sleep (fixed after reboot)
@@ -26,6 +25,8 @@ While it is possible to make the AC3165 card work now, it is adviced to replace 
 * Minor glitches for battery status is observed from time to time (empty or red battery icon, etc)
 
 ## Optional configuration
+**Possible fixes**
+* Some users reported that they failed to boot. That was fixed by adding **npci=0x3000** to bootflags.
 
 **Disable Hibernation**
 
