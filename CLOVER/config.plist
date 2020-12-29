@@ -4,160 +4,153 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>SSDT</key>
+		<dict>
+			<key>DropOem</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>PluginType</key>
+				<true/>
+			</dict>
+			<key>NoOemTableId</key>
+			<false/>
+		</dict>
 		<key>AutoMerge</key>
 		<true/>
-		<key>Comment-DisabledAML</key>
-		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>DSDT</key>
 		<dict>
-			<key>DropOEM_DSM</key>
-			<false/>
-			<key>Fixes</key>
-			<dict>
-				<key>Comment-IRQ Fix</key>
-				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FixHPET</key>
-				<false/>
-				<key>FixIPIC</key>
-				<false/>
-				<key>FixRTC</key>
-				<false/>
-				<key>FixTMR</key>
-				<false/>
-			</dict>
-			<key>Name</key>
-			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
 				<dict>
-					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Disabled</key>
-					<true/>
 					<key>Find</key>
 					<data>T1NJRA==</data>
 					<key>Replace</key>
 					<data>WFNJRA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X09TSQ==</data>
 					<key>Replace</key>
 					<data>WE9TSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X0RTTQ==</data>
 					<key>Replace</key>
 					<data>WERTTQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EC0 to EC</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>RUMwXw==</data>
 					<key>Replace</key>
 					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change H_EC to EC</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change EC0 to EC</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>SF9FQw==</data>
 					<key>Replace</key>
 					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change ECDV to EC</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change H_EC to EC</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>RUNEVg==</data>
 					<key>Replace</key>
 					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change ECDV to EC</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>SEVDSQ==</data>
 					<key>Replace</key>
 					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change HECI to IMEI</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>TUVJXw==</data>
 					<key>Replace</key>
 					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Comment</key>
+					<string>change MEI to IMEI</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>SERBUw==</data>
 					<key>Replace</key>
 					<data>SERFRg==</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change HDAS to HDEF</string>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>R0ZYMA==</data>
 					<key>Replace</key>
 					<data>SUdQVQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1BUUwE=</data>
 					<key>Replace</key>
 					<data>WlBUUwE=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(_WAK,1,N) to ZWAK, pair with SSDT-PTSWAK.aml</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>change Method(_PTS,1,N) to ZPTS, pair with SSDT-PTSWAK.aml</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1dBSwk=</data>
 					<key>Replace</key>
 					<data>WldBSwk=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>change Method(_WAK,1,N) to ZWAK, pair with SSDT-PTSWAK.aml</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>R1BSVwI=</data>
 					<key>Replace</key>
 					<data>WFBSVwI=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
 				</dict>
 				<dict>
 					<key>Find</key>
@@ -210,117 +203,136 @@
 					<string>change _L43 to XL43 (for SSDT-BAT)</string>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q43 to XQ43)</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>X1E0Mw==</data>
 					<key>Replace</key>
 					<data>WFE0Mw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q14 to XQ14)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q43 to XQ43)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1ExNA==</data>
 					<key>Replace</key>
 					<data>WFExNA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q15 to XQ15)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q14 to XQ14)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1ExNQ==</data>
 					<key>Replace</key>
 					<data>WFExNQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q6A to XQ6A)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q15 to XQ15)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E2QQ==</data>
 					<key>Replace</key>
 					<data>WFE2QQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q16 to XQ16)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q6A to XQ6A)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1ExNg==</data>
 					<key>Replace</key>
 					<data>WFExNg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q64 to XQ64)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q16 to XQ16)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E2NA==</data>
 					<key>Replace</key>
 					<data>WFE2NA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q66 to XQ66)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q64 to XQ64)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E2Ng==</data>
 					<key>Replace</key>
 					<data>WFE2Ng==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q60 to XQ60)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q66 to XQ66)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E2MA==</data>
 					<key>Replace</key>
 					<data>WFE2MA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q61 to XQ61)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q60 to XQ60)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E2MQ==</data>
 					<key>Replace</key>
 					<data>WFE2MQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q62 to XQ62)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q61 to XQ61)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E2Mg==</data>
 					<key>Replace</key>
 					<data>WFE2Mg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change Method (_Q94 to XQ94)</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q62 to XQ62)</string>
+				</dict>
+				<dict>
 					<key>Find</key>
 					<data>X1E5NA==</data>
 					<key>Replace</key>
 					<data>WFE5NA==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>Change Method (_Q94 to XQ94)</string>
 				</dict>
 			</array>
+			<key>Fixes</key>
+			<dict>
+				<key>FixHPET</key>
+				<false/>
+				<key>FixRTC</key>
+				<false/>
+				<key>FixTMR</key>
+				<false/>
+				<key>Comment-IRQ Fix</key>
+				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>FixIPIC</key>
+				<false/>
+			</dict>
+			<key>Name</key>
+			<string>DSDT.aml</string>
+			<key>DropOEM_DSM</key>
+			<false/>
 		</dict>
+		<key>Comment-DisabledAML</key>
+		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -332,62 +344,102 @@
 				<string>#DMAR</string>
 			</dict>
 			<dict>
-				<key>Signature</key>
-				<string>#SSDT</string>
 				<key>TableId</key>
 				<string>xh_rvp10</string>
+				<key>Signature</key>
+				<string>#SSDT</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<true/>
-		<key>SSDT</key>
-		<dict>
-			<key>DropOem</key>
-			<false/>
-			<key>Generate</key>
-			<dict>
-				<key>PluginType</key>
-				<true/>
-			</dict>
-			<key>NoOemTableId</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#DefaultVolume</key>
-		<string>LastBootedVolume</string>
-		<key>Arguments</key>
-		<string>dart=0 alcid=15</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
-		<key>NeverDoRecovery</key>
-		<true/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>2</integer>
+		<key>#DefaultVolume</key>
+		<string>LastBootedVolume</string>
+		<key>Arguments</key>
+		<string>dart=0 alcid=15</string>
 		<key>XMPDetection</key>
 		<false/>
+		<key>Timeout</key>
+		<integer>2</integer>
+		<key>NeverDoRecovery</key>
+		<true/>
+	</dict>
+	<key>GUI</key>
+	<dict>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Windows</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Title</key>
+					<string>Windows</string>
+					<key>Ignore</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>NoCaches</key>
+					<false/>
+					<key>Type</key>
+					<string>OSXRecovery</string>
+					<key>Hidden</key>
+					<false/>
+					<key>Title</key>
+					<string>Recovery</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+				</dict>
+			</array>
+		</dict>
+		<key>Language</key>
+		<string>en:0</string>
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
+		<key>Scan</key>
+		<dict>
+			<key>Tool</key>
+			<true/>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<false/>
+		</dict>
+		<key>#ScreenResolution</key>
+		<string>1920x1080</string>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
+		<key>Theme</key>
+		<string>embedded</string>
 	</dict>
 	<key>BootGraphics</key>
 	<dict>
 		<key>UIScale</key>
 		<integer>1</integer>
 	</dict>
-	<key>Comment</key>
-	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<string>No</string>
-		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>FakeID</key>
 		<dict>
 			<key>#IntelGFX</key>
@@ -395,106 +447,48 @@
 			<key>#Kaby Lake-Comment</key>
 			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
 		</dict>
-		<key>LANInjection</key>
-		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AAAWWQ==</data>
-				<key>device-id</key>
-				<data>FlkAAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>CgAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAWWQ==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>device-id</key>
+				<data>FlkAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>CgAAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
 			</dict>
+		</dict>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<string>No</string>
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
 			<false/>
-			<key>HighCurrent</key>
+			<key>AddClockID</key>
 			<true/>
 			<key>Inject</key>
+			<true/>
+			<key>HighCurrent</key>
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
-	</dict>
-	<key>GUI</key>
-	<dict>
-		<key>#ScreenResolution</key>
-		<string>1920x1080</string>
-		<key>Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>Hidden</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Title</key>
-					<string>OS X Recovery</string>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-				</dict>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-					<key>Title</key>
-					<string>Windows</string>
-					<key>Type</key>
-					<string>Windows</string>
-				</dict>
-			</array>
-		</dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-		</array>
-		<key>Language</key>
-		<string>en:0</string>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<false/>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
-			<false/>
-			<key>Tool</key>
-			<true/>
-		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
-		<key>Theme</key>
-		<string>embedded</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -517,70 +511,70 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>KernelPm</key>
+		<false/>
 		<key>AppleRTC</key>
 		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>KernelLapic</key>
 		<false/>
-		<key>KernelPm</key>
-		<false/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>ROM</key>
-		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>03/07/2020</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2003070211</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE137</string>
 		<key>Board-ID</key>
 		<string>Mac-53FDB3D8DB8CA971</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02852101CDJH4RUE</string>
-		<key>BoardType</key>
-		<integer>10</integer>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
 		<key>BoardVersion</key>
 		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
+		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x09</string>
-		<key>EfiVersion</key>
-		<string>1037.100.355.0.0</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
+		<key>BiosVersion</key>
+		<string>MBP154.88Z.F000.B00.2003070211</string>
+		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
+		<key>ChassisAssetTag</key>
+		<string>MacBook-Aluminum</string>
 		<key>PlatformFeature</key>
 		<string>0x02</string>
+		<key>Family</key>
+		<string>MacBook Pro</string>
+		<key>ChassisManufacturer</key>
+		<string>Apple Inc.</string>
+		<key>BoardSerialNumber</key>
+		<string>C02852101CDJH4RUE</string>
+		<key>BiosVendor</key>
+		<string>Apple Inc.</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,4</string>
-		<key>SerialNumber</key>
-		<string>C02WL7Z8JHCD</string>
 		<key>SmUUID</key>
 		<string>18E3C777-1050-4787-B458-A44A140D3436</string>
+		<key>Mobile</key>
+		<true/>
+		<key>BoardType</key>
+		<integer>10</integer>
+		<key>EfiVersion</key>
+		<string>1037.100.355.0.0</string>
+		<key>SerialNumber</key>
+		<string>C02WL7Z8JHCD</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
+		<key>BiosReleaseDate</key>
+		<string>03/07/2020</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -589,7 +583,26 @@
 		<key>CustomUUID</key>
 		<string>64B9B886-AB16-5099-878C-5DDB20F4ABC8</string>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>No</string>
 	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>SetupVirtualMap</key>
+		<true/>
+		<key>RebuildAppleMemoryMap</key>
+		<true/>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>SyncRuntimePermissions</key>
+		<true/>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>ProvideCustomSlide</key>
+		<true/>
+		<key>XhciPortLimit</key>
+		<false/>
+	</dict>
+	<key>Comment</key>
+	<string>This file is for 10.12.6+ with native KabyLake support</string>
 </dict>
 </plist>
