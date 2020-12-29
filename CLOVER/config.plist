@@ -160,54 +160,56 @@
 					<data>WFBSVwI=</data>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>change GBIF to XBIF (for SSDT-BAT)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>FkdCSUY=</data>
 					<key>Replace</key>
 					<data>FlhCSUY=</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change GBIF to XBIF (for SSDT-BAT)</string>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>change GBIX to XBIX (for SSDT-BAT)</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>R0JJWAM=</data>
 					<key>Replace</key>
 					<data>WEJJWAM=</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change GBIX to XBIX (for SSDT-BAT)</string>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>change GBST to XBST (for SSDT-BAT)</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>R0JTVAQ=</data>
 					<key>Replace</key>
 					<data>WEJTVAQ=</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change GBST to XBST (for SSDT-BAT)</string>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>change OWAK to XWAK (for SSDT-BAT)</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>b09XQUs=</data>
 					<key>Replace</key>
 					<data>b1hXQUs=</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change OWAK to XWAK (for SSDT-BAT)</string>
 				</dict>
 				<dict>
-					<key>Comment</key>
-					<string>change _L43 to XL43 (for SSDT-BAT)</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>CF9MNDM=</data>
 					<key>Replace</key>
 					<data>CFhMNDM=</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change _L43 to XL43 (for SSDT-BAT)</string>
 				</dict>
 				<dict>
 					<key>Comment</key>
