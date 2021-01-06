@@ -3,9 +3,10 @@
 Tested on 20KS003AXS model with macOS Big Sur (11.1)
 
 **NOTICE**
-Clover version of Big Sur is not stable, so I cannot recommend this update.
+
+Clover version of Big Sur is not stable (for ex. BT is not working), so I cannot recommend this update.
 I have a plan to migrate to OpenCore bootloader, so this commit is the last one for Clover.
-Be aware that Big Sur installation can only be boot from **Preboot** partition.
+Be aware that Big Sur installation and system can only be boot from **Preboot** partition.
 
 
 **BIOS Settings**
