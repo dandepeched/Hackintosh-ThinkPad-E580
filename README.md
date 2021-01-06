@@ -6,9 +6,17 @@ Tested on 20KS003AXS model with macOS Big Sur (11.1)
 
 This repo migrated to OpenCore bootloader. You still can find the last Clover files in 'EFI-Clover' folder.
 Be aware that Big Sur+OpenCore combination may require some/significant time for initial setup. I experienced number of annoying issues that lead to few re-installs and admin permissions recovery.
+Also make sure to replace PlatformInfo parameters with your own unique values:
+```
+Generic -> MLB
+Generic -> ROM
+Generic -> SystemSerialNumber
+Generic -> SystemUUID
+```
 
 **BIOS Settings**
 * BIOS version 1.34
+* Controller should be set to AHCI
 * Disabled options: Secure Boot; CSM Support; Internal Storage Tamper Detection
 * To prevent instant wake also disable: Wake On Lan; Network Stack; Always On USB
 

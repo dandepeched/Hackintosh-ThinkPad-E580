@@ -532,56 +532,56 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xFD8FF426</string>
 		<key>Board-ID</key>
 		<string>Mac-53FDB3D8DB8CA971</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFF9FFF3F</string>
 		<key>BoardVersion</key>
-		<string>1.0</string>
+		<string>MacBookPro15,4</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string>0x9</string>
 		<key>BiosVersion</key>
-		<string>MBP154.88Z.F000.B00.2003070211</string>
+		<string>MBP154.88Z.F000.B00.2011302024</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>Asset Tag#</string>
 		<key>PlatformFeature</key>
-		<string>0x02</string>
+		<string>0x32</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02852101CDJH4RUE</string>
+		<string>FVF908300QX0000JC</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,4</string>
 		<key>SmUUID</key>
-		<string>18E3C777-1050-4787-B458-A44A140D3436</string>
+		<string>7AFB2729-335C-413D-B020-BFB50BFC5521</string>
 		<key>Mobile</key>
 		<true/>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>EfiVersion</key>
-		<string>1037.100.355.0.0</string>
+		<string>1554.60.15.0.0</string>
 		<key>SerialNumber</key>
-		<string>C02WL7Z8JHCD</string>
+		<string>FVFY90XWL40Y</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>BiosReleaseDate</key>
-		<string>03/07/2020</string>
+		<string>11/30/2020</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>64B9B886-AB16-5099-878C-5DDB20F4ABC8</string>
+		<string>20D2D57F-54B8-4EE0-81FA-F8AF544B174A</string>
 		<key>InjectKexts</key>
 		<string>No</string>
 	</dict>

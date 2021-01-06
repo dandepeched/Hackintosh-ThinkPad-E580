@@ -1259,11 +1259,11 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02852101CDJH4RUE</string>
+			<string>FVF908300QX0000JC</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>VOGt90G/</data>
+			<data>ESIzAAAA</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1271,9 +1271,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,4</string>
 			<key>SystemSerialNumber</key>
-			<string>C02WL7Z8JHCD</string>
+			<string>FVFY90XWL40Y</string>
 			<key>SystemUUID</key>
-			<string>18E3C777-1050-4787-B458-A44A140D3436</string>
+			<string>7AFB2729-335C-413D-B020-BFB50BFC5521</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
