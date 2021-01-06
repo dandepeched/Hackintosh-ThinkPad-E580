@@ -2,16 +2,15 @@
 
 Tested on 20KS003AXS model with macOS Big Sur (11.1)
 
-**NOTICE**
+**IMPORTANT**
 
-Clover version of Big Sur is not stable (for ex. BT is not working), so I cannot recommend this update.
-I have a plan to migrate to OpenCore bootloader, so this commit is the last one for Clover.
-Be aware that Big Sur installation and system can only be boot from **Preboot** partition.
-
+This repo migrated to OpenCore bootloader. You still can find the last Clover files in 'EFI-Clover' folder.
+Be aware that Big Sur+OpenCore combination may require some/significant time for initial setup. I experienced number of annoying issues that lead to few re-installs and admin permissions recovery.
 
 **BIOS Settings**
 * BIOS version 1.34
-* Disable Secure Boot option
+* Disabled options: Secure Boot; CSM Support; Internal Storage Tamper Detection
+* To prevent instant wake also disable: Wake On Lan; Network Stack; Always On USB
 
 **Not Supported Hardware**
 * Following stock NVMe SSDs reported as not supported: Samsung PM981
@@ -24,12 +23,11 @@ Be aware that Big Sur installation and system can only be boot from **Preboot** 
 **Wi-Fi Adapter**
 
 While it is possible to make the stock Wi-Fi card (Intel AC3165) work now, it is still adviced to replace it with a better card that is supported.
-I've replaced mine with Broadcom BCM94352Z.
+I've replaced mine with Broadcom BCM94352Z, so this repo contains kexts for it.
 
 **Known Issues**
 * Lid close and FN keys stop working after sleep (fixed after reboot)
-* External monitor need to be re-plugged after sleep
-* Minor glitches for battery status is observed from time to time (empty or red battery icon, etc)
+* External monitor connected to HDMI need to be re-plugged after sleep
 
 ## Optional configuration
 **Possible fixes**
@@ -47,7 +45,3 @@ sudo mkdir /var/vm/sleepimage
 sudo pmset -a standby 0
 sudo pmset -a autopoweroff 0
 ```
-
-**Kexts Location**
-
-If you prefer to keep all kexts in */Library/Extensions* directory, you can use those from *Non-EFI Files* folder
