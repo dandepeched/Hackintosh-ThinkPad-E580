@@ -19,6 +19,7 @@ Generic -> SystemUUID
 * Controller should be set to AHCI
 * Disabled options: Secure Boot; CSM Support; Internal Storage Tamper Detection
 * To prevent instant wake also disable: Wake On Lan; Network Stack; Always On USB
+* Enable F1-F12 as Primary Function + install Karabiner-Elements to emulate FN keys behavior
 
 **Not Supported Hardware**
 * Following stock NVMe SSDs reported as not supported: Samsung PM981
@@ -34,8 +35,9 @@ While it is possible to make the stock Wi-Fi card (Intel AC3165) work now, it is
 I've replaced mine with Broadcom BCM94352Z, so this repo contains kexts for it.
 
 **Known Issues**
-* Lid close and FN keys stop working after sleep (fixed after reboot)
+* Lid close and FN keys stop working after sleep also battery status is stuck. Fixed after reboot.
 * External monitor connected to HDMI need to be re-plugged after sleep
+* Not possible to boot Windows via OC (still possible via BIOS boot selection)
 
 ## Optional configuration
 **Possible fixes**
